@@ -6,7 +6,7 @@
         public int DoctorId { get; set; }
         public int PatientId { get; set; }
         public string ServiceName { get; set; }
-        public string Description { get; set; }
+        public string? Description { get; set; }
         public decimal Price { get; set; }
         public Doctor Doctor { get; set; }
         public Patient Patient { get; set; }
