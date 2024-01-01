@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.8.34330.188
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GetAMedic", "GetAMedic\GetAMedic.csproj", "{724D5D9A-4D71-494A-AD92-3A8243A7C48B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GetAMedicTests", "GetAMedicTests\GetAMedicTests.csproj", "{585482B8-6544-489B-837F-B79F46DFA64B}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{724D5D9A-4D71-494A-AD92-3A8243A7C48B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{724D5D9A-4D71-494A-AD92-3A8243A7C48B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{724D5D9A-4D71-494A-AD92-3A8243A7C48B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{724D5D9A-4D71-494A-AD92-3A8243A7C48B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{585482B8-6544-489B-837F-B79F46DFA64B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{585482B8-6544-489B-837F-B79F46DFA64B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{585482B8-6544-489B-837F-B79F46DFA64B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{585482B8-6544-489B-837F-B79F46DFA64B}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {830A1919-61FF-4938-9F42-4DD217BB5A63}
+	EndGlobalSection
+EndGlobal
