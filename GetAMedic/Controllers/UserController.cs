@@ -1,5 +1,4 @@
-﻿using Microsoft.AspNetCore.Http;
-using Microsoft.AspNetCore.Identity;
+﻿using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
 
 namespace GetAMedic.Controllers
@@ -10,7 +9,7 @@ namespace GetAMedic.Controllers
     {
         [HttpPost]
         [Route("register")]
-        public async Task<IActionResult> Register(IdentityUser identityUser)
+        public async Task<IActionResult> Register(IdentityUser identityUser, string roleName)
         {
             var user = new IdentityUser
             {
@@ -22,10 +21,18 @@ namespace GetAMedic.Controllers
 
             if (result.Succeeded)
             {
+                await _userManager.AddToRoleAsync(user, roleName);
+
                 return Ok(result);
             }
 
-            return BadRequest();
+            // Creates a dictionary where the e.Code its the key and e.Description its the value
+            var errors = result.Errors.ToDictionary(e => e.Code, e => e.Description);
+
+            return BadRequest(new
+            {
+                Errors = errors
+            });
         }
 
         [HttpPost]
